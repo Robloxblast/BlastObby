@@ -1,0 +1,97 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Blast Hub [Obby But You're on a Bike]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Teleport"
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 1)",
+	Callback = function()
+      	  local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, -3.550002336502075, -20961.25)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 2)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.0255126953125, -3.5396480560302734, -13632.2578125)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 3)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, -3.508894920349121, -18335.5)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 4)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107, -3.550002336502075, -14999.75)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 5)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, -3.5469257831573486, -22321.951171875)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (World 6)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, -3.517886161804199, -15894.30078125)
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Owner, Scripter: Robloxblast"
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Key System: RoJav"
+})
