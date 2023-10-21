@@ -80,6 +80,24 @@ rootPart.CFrame = CFrame.new(107.00023651123047, -3.517886161804199, -15894.3007
 })
 
 
+Tab:AddButton({
+	Name = "Tp to End (World 7)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, 7.635317802429199, -19089.44921875)
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Tp to End (Spooky World)",
+	Callback = function()
+      		local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(107.00023651123047, 7.655837059020996, -12112)
+  	end    
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
